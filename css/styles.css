@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+li {
+  list-style-type: none;
+}
+
+/*banner*/
+#bannerContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 80vh;
+  color: whitesmoke;
+  background-color: black;
+}
+
+#bannerContainer .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
