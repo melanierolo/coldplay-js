@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
 /*header*/
 .header {
   padding: 20px;
