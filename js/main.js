@@ -1,4 +1,4 @@
-import { coldplayVideos } from "../data/data.js";
+import allColdplayVideos from "../data/data.json" assert { type: "json" };
 
 function createCard(element) {
   const card = `<div
@@ -67,9 +67,10 @@ function filter(arrayVideos) {
 }
 
 const showCards = document.getElementById("showCards");
+const coldplayVideos = allColdplayVideos.coldplayVideos;
 let copiedColdplayVideos = [...coldplayVideos];
 
-console.log("data:", coldplayVideos);
+console.log(allColdplayVideos);
 
 /*------------------Render all cards------------------ */
 renderToHtml(coldplayVideos);
