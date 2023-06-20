@@ -1,0 +1,305 @@
+{
+  "coldplayVideos": [
+    {
+      "id": 1,
+      "title": "Humankind",
+      "year": 2022,
+      "videoEmbed": "https://www.youtube.com/embed/l6_nRqIz_9o",
+      "videoUrl": "https://youtu.be/l6_nRqIz_9o"
+    },
+    {
+      "id": 2,
+      "title": "Biutyful",
+      "year": 2022,
+      "videoEmbed": "https://www.youtube.com/embed/raHLFg6bkNI",
+      "videoUrl": "https://youtu.be/raHLFg6bkNI"
+    },
+    {
+      "id": 3,
+      "title": "People Of The Pride",
+      "year": 2022,
+      "videoEmbed": "https://www.youtube.com/embed/_MOmdDLQVn4",
+      "videoUrl": "https://youtu.be/_MOmdDLQVn4"
+    },
+    {
+      "id": 4,
+      "title": "Higher Power",
+      "year": 2021,
+      "videoEmbed": "https://www.youtube.com/embed/3lfnR7OhZY8",
+      "videoUrl": "https://youtu.be/3lfnR7OhZY8"
+    },
+    {
+      "id": 5,
+      "title": "Trouble In Town",
+      "year": 2020,
+      "videoEmbed": "https://www.youtube.com/embed/aKlwJROuo-Q",
+      "videoUrl": "https://youtu.be/aKlwJROuo-Q"
+    },
+    {
+      "id": 6,
+      "title": "Champion Of The World",
+      "year": 2020,
+      "videoEmbed": "https://www.youtube.com/embed/kayI9QB1-IA",
+      "videoUrl": "https://youtu.be/kayI9QB1-IA"
+    },
+    {
+      "id": 7,
+      "title": "Cry Cry Cry",
+      "year": 2020,
+      "videoEmbed": "https://www.youtube.com/embed/lA9-TQE3lTM",
+      "videoUrl": "https://www.youtube.com/watch?v=lA9-TQE3lTM"
+    },
+    {
+      "id": 8,
+      "title": "Everyday Life",
+      "year": 2019,
+      "videoEmbed": "https://www.youtube.com/embed/7HmiFxqdgq4",
+      "videoUrl": "https://youtu.be/7HmiFxqdgq4"
+    },
+    {
+      "id": 9,
+      "title": "Daddy",
+      "year": 2019,
+      "videoEmbed": "https://www.youtube.com/embed/OWhiCkEY-Yk",
+      "videoUrl": "https://youtu.be/OWhiCkEY-Yk"
+    },
+    {
+      "id": 10,
+      "title": "Orphans",
+      "year": 2019,
+      "videoEmbed": "https://www.youtube.com/embed/PXKYA-zmzTY",
+      "videoUrl": "https://youtu.be/PXKYA-zmzTY"
+    },
+    {
+      "id": 11,
+      "title": "Everglow [Single Version]",
+      "year": 2016,
+      "videoEmbed": "https://www.youtube.com/embed/xn_1hFdE-5g",
+      "videoUrl": "https://youtu.be/xn_1hFdE-5g"
+    },
+    {
+      "id": 12,
+      "title": "A Head Full Of Dreams",
+      "year": 2016,
+      "videoEmbed": "https://www.youtube.com/embed/vGZMvV9KBp8",
+      "videoUrl": "https://youtu.be/vGZMvV9KBp8"
+    },
+    {
+      "id": 13,
+      "title": "Up&Up",
+      "year": 2016,
+      "videoEmbed": "https://www.youtube.com/embed/BPNTC7uZYrI",
+      "videoUrl": "https://youtu.be/BPNTC7uZYrI"
+    },
+    {
+      "id": 14,
+      "title": "Birds",
+      "year": 2016,
+      "videoEmbed": "https://www.youtube.com/embed/vqOnUB9gnDM",
+      "videoUrl": "https://youtu.be/vqOnUB9gnDM"
+    },
+    {
+      "id": 15,
+      "title": "Adventure Of A Lifetime",
+      "year": 2015,
+      "videoEmbed": "https://www.youtube.com/embed/QtXby3twMmI",
+      "videoUrl": "https://youtu.be/QtXby3twMmI"
+    },
+    {
+      "id": 16,
+      "title": "Ghost Story",
+      "year": 2015,
+      "videoEmbed": "https://www.youtube.com/embed/0-XXX3dnlVc",
+      "videoUrl": "https://youtu.be/0-XXX3dnlVc"
+    },
+    {
+      "id": 17,
+      "title": "All Your Friends",
+      "year": 2014,
+      "videoEmbed": "https://www.youtube.com/embed/E5a51OonZDE",
+      "videoUrl": "https://youtu.be/E5a51OonZDE"
+    },
+    {
+      "id": 18,
+      "title": "True Love",
+      "year": 2014,
+      "videoEmbed": "https://www.youtube.com/embed/Wpl_6jotaHA",
+      "videoUrl": "https://youtu.be/Wpl_6jotaHA"
+    },
+    {
+      "id": 19,
+      "title": "A Sky Full Of Stars",
+      "year": 2014,
+      "videoEmbed": "https://www.youtube.com/embed/VPRjCeoBqrI",
+      "videoUrl": "https://www.youtube.com/embed/VPRjCeoBqrI"
+    },
+    {
+      "id": 20,
+      "title": "Magic",
+      "year": 2014,
+      "videoEmbed": "https://www.youtube.com/embed/Qtb11P1FWnc",
+      "videoUrl": "https://youtu.be/Qtb11P1FWnc"
+    },
+    {
+      "id": 21,
+      "title": "Midnight",
+      "year": 2014,
+      "videoEmbed": "https://www.youtube.com/embed/BQeMxWjpr-Y",
+      "videoUrl": "https://youtu.be/BQeMxWjpr-Y"
+    },
+    {
+      "id": 22,
+      "title": "Hurts Like Heaven",
+      "year": 2012,
+      "videoEmbed": "https://www.youtube.com/embed/C8KV0mzqTXY",
+      "videoUrl": "https://youtu.be/C8KV0mzqTXY"
+    },
+    {
+      "id": 23,
+      "title": "Charlie Brown",
+      "year": 2012,
+      "videoEmbed": "https://www.youtube.com/embed/zTFBJgnNgU4",
+      "videoUrl": "https://youtu.be/zTFBJgnNgU4"
+    },
+    {
+      "id": 24,
+      "title": "Paradise",
+      "year": 2011,
+      "videoEmbed": "https://www.youtube.com/embed/1G4isv_Fylg",
+      "videoUrl": "https://youtu.be/1G4isv_Fylg"
+    },
+    {
+      "id": 25,
+      "title": "Every Teardrop Is a Waterfall",
+      "year": 2011,
+      "videoEmbed": "https://www.youtube.com/embed/fyMhvkC3A84",
+      "videoUrl": "https://youtu.be/fyMhvkC3A84"
+    },
+    {
+      "id": 26,
+      "title": "Christmas Lights",
+      "year": 2010,
+      "videoEmbed": "https://www.youtube.com/embed/z1rYmzQ8C9Q",
+      "videoUrl": "https://youtu.be/z1rYmzQ8C9Q"
+    },
+    {
+      "id": 27,
+      "title": "Life In Technicolor II",
+      "year": 2009,
+      "videoEmbed": "https://www.youtube.com/embed/fXSovfzyx28",
+      "videoUrl": "https://youtu.be/fXSovfzyx28"
+    },
+    {
+      "id": 28,
+      "title": "Strawberry Swing",
+      "year": 2009,
+      "videoEmbed": "https://www.youtube.com/embed/h3pJZSTQqIg",
+      "videoUrl": "https://youtu.be/h3pJZSTQqIg"
+    },
+    {
+      "id": 29,
+      "title": "Lovers In Japan",
+      "year": 2008,
+      "videoEmbed": "https://www.youtube.com/embed/OTFFQkdhw6Q",
+      "videoUrl": "https://youtu.be/OTFFQkdhw6Q"
+    },
+    {
+      "id": 30,
+      "title": "Viva La Vida",
+      "year": 2008,
+      "videoEmbed": "https://www.youtube.com/embed/dvgZkm1xWPE",
+      "videoUrl": "https://youtu.be/dvgZkm1xWPE"
+    },
+    {
+      "id": 31,
+      "title": "Violet Hill",
+      "year": 2008,
+      "videoEmbed": "https://www.youtube.com/embed/IakDItZ7f7Q",
+      "videoUrl": "https://youtu.be/IakDItZ7f7Q"
+    },
+    {
+      "id": 32,
+      "title": "The Hardest Part",
+      "year": 2006,
+      "videoEmbed": "https://www.youtube.com/embed/WAGbq3A9HfA",
+      "videoUrl": "https://youtu.be/WAGbq3A9HfA"
+    },
+    {
+      "id": 33,
+      "title": "Speed Of Sound",
+      "year": 2005,
+      "videoEmbed": "https://www.youtube.com/embed/0k_1kvDh2UA",
+      "videoUrl": "https://youtu.be/0k_1kvDh2UA"
+    },
+    {
+      "id": 35,
+      "title": "Fix You",
+      "year": 2005,
+      "videoEmbed": "https://www.youtube.com/embed/k4V3Mo61fJM",
+      "videoUrl": "https://youtu.be/k4V3Mo61fJM"
+    },
+    {
+      "id": 36,
+      "title": "Talk",
+      "year": 2005,
+      "videoEmbed": "https://www.youtube.com/embed/EH9meoWmAOM",
+      "videoUrl": "https://youtu.be/EH9meoWmAOM"
+    },
+    {
+      "id": 37,
+      "title": "God Put A Smile Upon Your Face",
+      "year": 2003,
+      "videoEmbed": "https://www.youtube.com/embed/qhIVgSoJVRc",
+      "videoUrl": "https://youtu.be/qhIVgSoJVRc"
+    },
+    {
+      "id": 38,
+      "title": "Clocks",
+      "year": 2003,
+      "videoEmbed": "https://www.youtube.com/embed/d020hcWA_Wg",
+      "videoUrl": "https://youtu.be/d020hcWA_Wg"
+    },
+    {
+      "id": 39,
+      "title": "The Scientist",
+      "year": 2002,
+      "videoEmbed": "https://www.youtube.com/embed/RB-RcX5DS5A",
+      "videoUrl": "https://youtu.be/RB-RcX5DS5A"
+    },
+    {
+      "id": 40,
+      "title": "In My Place",
+      "year": 2002,
+      "videoEmbed": "https://www.youtube.com/embed/gnIZ7RMuLpU",
+      "videoUrl": "https://youtu.be/gnIZ7RMuLpU"
+    },
+    {
+      "id": 41,
+      "title": "Don't Panic",
+      "year": 2001,
+      "videoEmbed": "https://www.youtube.com/embed/yWeuUwpEQfs",
+      "videoUrl": "https://youtu.be/yWeuUwpEQfs"
+    },
+    {
+      "id": 42,
+      "title": "Trouble",
+      "year": 2000,
+      "videoEmbed": "https://www.youtube.com/embed/kcASPx3-HuI",
+      "videoUrl": "https://youtu.be/kcASPx3-HuI"
+    },
+    {
+      "id": 43,
+      "title": "Yellow",
+      "year": 2000,
+      "videoEmbed": "https://www.youtube.com/embed/yKNxeF4KMsY",
+      "videoUrl": "https://youtu.be/yKNxeF4KMsY"
+    },
+    {
+      "id": 44,
+      "title": "Shiver",
+      "year": 2000,
+      "videoEmbed": "https://www.youtube.com/embed/u8XFFTWwSvY",
+      "videoUrl": "https://youtu.be/u8XFFTWwSvY"
+    }
+  ]
+}

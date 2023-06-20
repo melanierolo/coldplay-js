@@ -69,6 +69,8 @@ function filter(arrayVideos) {
 const showCards = document.getElementById("showCards");
 let copiedColdplayVideos = [...coldplayVideos];
 
+console.log("data:", coldplayVideos);
+
 /*------------------Render all cards------------------ */
 renderToHtml(coldplayVideos);
 
