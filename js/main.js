@@ -9,7 +9,7 @@ function createCard(element) {
       width="100%"
       id="player"
       type="text/html"
-      src=${element.videoUrl}
+      src=${element.videoEmbed}
       loading="lazy"
       title="YouTube video player"
       frameborder="0"
@@ -32,6 +32,12 @@ function createCard(element) {
   return card;
 }
 
+function renderToHtml(array) {
+  for (let i = 0; i < array.length; i++) {
+    showCards.innerHTML += createCard(coldplayVideos[i]);
+  }
+}
+
 function orderByYear(direction) {
   let showCards = document.getElementById("showCards");
 
@@ -52,17 +58,26 @@ function orderByYear(direction) {
   orderedArrayVideos.map((video) => (showCards.innerHTML += createCard(video)));
 }
 
+function filter(arrayVideos) {
+  const inputText = form.value.toLowerCase();
+  const result = [...arrayVideos].filter(
+    (video) => video.indexOf(inputText) === 1
+  );
+  return result;
+}
+
 const showCards = document.getElementById("showCards");
 let copiedColdplayVideos = [...coldplayVideos];
+
+/*------------------Render all cards------------------ */
+renderToHtml(coldplayVideos);
+
 const buttonAscByYear = document.getElementById("ascByYear");
 const buttonDescByYear = document.getElementById("descByYear");
+
 buttonAscByYear.addEventListener("click", function () {
   orderByYear("asc");
 });
 buttonDescByYear.addEventListener("click", function () {
   orderByYear("desc");
 });
-
-for (let i = 0; i < coldplayVideos.length; i++) {
-  showCards.innerHTML += createCard(coldplayVideos[i]);
-}

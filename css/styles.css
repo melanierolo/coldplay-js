@@ -24,6 +24,12 @@ li {
 }
 
 /*banner*/
+.container__title {
+  font-size: 56px;
+}
+.container__paragraph {
+  font-size: 24px;
+}
 #bannerContainer {
   display: flex;
   align-items: center;
@@ -42,22 +48,40 @@ li {
 }
 
 /*filters*/
-.fiters {
+.filters {
   background-color: #c8c9ca;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
+}
+
+.filters__title {
+  font-size: 48px;
+  margin: 0 0 20px 0;
+}
+.filter__search {
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 2px solid #fff;
+}
+.sortButtons {
+  display: flex;
+  flex-direction: row;
   gap: 8px;
 }
-.fiters button {
+.filters button {
   border: 2px solid rgb(31, 142, 255);
   padding: 8px;
   border-radius: 10px;
   color: whitesmoke;
   background-color: rgb(31, 142, 255);
+  cursor: pointer;
 }
-.fiters button:hover {
+.filters button:hover {
   border: 2px solid #0070cc;
   padding: 8px;
   border-radius: 10px;

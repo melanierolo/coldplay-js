@@ -20,13 +20,26 @@
       <section></section>
       <section id="bannerContainer">
         <div class="container">
-          <h2>Welcome to Videos of Coldplay</h2>
-          <p>Here, you can search and filter about Coldplay's videos.</p>
+          <h2 class="container__title">Welcome to Videos of Coldplay</h2>
+          <p class="container__paragraph">
+            Here, you can search and filter about Coldplay's videos.
+          </p>
         </div>
       </section>
-      <section class="fiters">
-        <button id="ascByYear">Asc. by Year</button>
-        <button id="descByYear">Desc. by Year</button>
+      <section>
+        <div class="filters">
+          <h2 class="filters__title">Videos of Coldplay</h2>
+          <input
+            class="filter__search"
+            type="text"
+            id="filter__search"
+            placeholder="Search here..."
+          />
+          <div class="sortButtons">
+            <button id="ascByYear">Asc. by Year</button>
+            <button id="descByYear">Desc. by Year</button>
+          </div>
+        </div>
       </section>
       <section class="showCards" id="showCards"></section>
     </main>
