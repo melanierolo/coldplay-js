@@ -161,3 +161,14 @@ li {
   width: 30px;
   height: auto;
 }
+
+footer {
+  height: 60px;
+  color: whitesmoke;
+  background-color: #101010;
+  /*text*/
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
