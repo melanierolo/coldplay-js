@@ -32,55 +32,63 @@ function createCard(element) {
   return card;
 }
 
-function renderToHtml(array) {
-  for (let i = 0; i < array.length; i++) {
-    showCards.innerHTML += createCard(coldplayVideos[i]);
-  }
+function search(value, arrayVideos) {
+  const filtered = [...arrayVideos].filter((element) =>
+    element.title.toLowerCase().includes(value)
+  );
+  return filtered;
 }
 
-function orderByYear(direction) {
-  let showCards = document.getElementById("showCards");
-
-  //eliminamos el contenido
-  showCards.innerHTML = "";
-
-  let orderedArrayVideos = copiedColdplayVideos.sort((a, b) => {
-    console.log(a);
-    console.log(b);
+function orderByYear(direction, array) {
+  let orderedArrayVideos = [...array].sort((a, b) => {
     if (direction === "asc") {
       return a.year > b.year ? 1 : -1;
     } else {
       return a.year < b.year ? 1 : -1;
     }
   });
-  console.log(orderedArrayVideos);
-  //pintamos el resultado
-  orderedArrayVideos.map((video) => (showCards.innerHTML += createCard(video)));
+  return orderedArrayVideos;
 }
 
-function filter(arrayVideos) {
-  const inputText = form.value.toLowerCase();
-  const result = [...arrayVideos].filter(
-    (video) => video.indexOf(inputText) === 1
-  );
-  return result;
+function renderToHtml(array) {
+  //eliminamos el contenido
+  showCards.innerHTML = "";
+  //pintamos el resultado
+  for (let i = 0; i < array.length; i++) {
+    showCards.innerHTML += createCard(array[i]);
+  }
 }
 
 const showCards = document.getElementById("showCards");
 const coldplayVideos = allColdplayVideos.coldplayVideos;
 let copiedColdplayVideos = [...coldplayVideos];
-
+console.log("coldplayVideos", coldplayVideos[0]);
 console.log(allColdplayVideos);
 
-/*------------------Render all cards------------------ */
+/*------------------Render all cards----------------------- */
 renderToHtml(coldplayVideos);
+
+/*-----------------------Input search----------------------- */
+const inputSearch = document.getElementById("filter__search");
+
+inputSearch.addEventListener("input", (event) => {
+  const valueInput = event.target.value.toString().toLowerCase();
+  const arrayFiltered = search(valueInput, coldplayVideos);
+  copiedColdplayVideos = [...arrayFiltered];
+  renderToHtml(arrayFiltered);
+});
+
+/*-----------------------sort buttons----------------------- */
 
 const buttonAscByYear = document.getElementById("ascByYear");
 const buttonDescByYear = document.getElementById("descByYear");
 
 buttonAscByYear.addEventListener("click", function () {
-  orderByYear("asc");
+  const arrayOrdered = orderByYear("asc", copiedColdplayVideos);
+  renderToHtml(arrayOrdered);
 });
+
 buttonDescByYear.addEventListener("click", function () {
-  orderByYear("desc");
+  const arrayOrdered = orderByYear("desc", copiedColdplayVideos);
+  renderToHtml(arrayOrdered);
 });
