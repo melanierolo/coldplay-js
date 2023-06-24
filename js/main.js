@@ -5,7 +5,7 @@ function createCard(element) {
   class="card"
 >
   <div class="card__button">
-    <button id="btnAdd" class="card__buttonYellow">+</button>
+    <button id="${element.id}" class="card__buttonYellow">+</button>
   </div>
   <div class="card__content">
     <iframe
@@ -56,17 +56,33 @@ function orderByYear(direction, array) {
 function renderToHtml(array) {
   //eliminamos el contenido
   showCards.innerHTML = "";
+
   //pintamos el resultado
   for (let i = 0; i < array.length; i++) {
     showCards.innerHTML += createCard(array[i]);
+  }
+
+  //seleccionar todos los botonos de las cards
+  const buttonsAdd = document.querySelectorAll(".card__buttonYellow");
+
+  for (const buttonAdd of buttonsAdd) {
+    //addEventListener para cada botón
+    buttonAdd.addEventListener("click", function () {
+      //obtener los datos de cada video añadido
+      const videoColdplay = array.filter(
+        (video) => video.id === parseInt(buttonAdd.id)
+      );
+      console.log(videoColdplay[0]);
+      //Para almacenar un objeto tiene que ser string -JSON.stringify()
+      const videoColdplayJson = JSON.stringify(videoColdplay[0]);
+      localStorage.setItem(buttonAdd.id, videoColdplayJson);
+    });
   }
 }
 
 const showCards = document.getElementById("showCards");
 const coldplayVideos = allColdplayVideos.coldplayVideos;
 let copiedColdplayVideos = [...coldplayVideos];
-console.log("coldplayVideos", coldplayVideos[0]);
-console.log(allColdplayVideos);
 
 /*------------------Render all cards----------------------- */
 renderToHtml(coldplayVideos);
