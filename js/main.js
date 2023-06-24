@@ -4,6 +4,9 @@ function createCard(element) {
   const card = `<div
   class="card"
 >
+  <div class="card__button">
+    <button id="btnAdd" class="card__buttonYellow">+</button>
+  </div>
   <div class="card__content">
     <iframe
       width="100%"

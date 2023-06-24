@@ -97,6 +97,26 @@ li {
   padding: 20px;
   gap: 15px;
 }
+/*card button*/
+.card__button {
+  display: flex;
+  justify-content: flex-end;
+}
+/*button-yellow*/
+.card__buttonYellow {
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: #ffc107;
+  cursor: pointer;
+}
+.card__buttonYellow:hover {
+  color: whitesmoke;
+  background-color: #f7bb07;
+}
+
 /*card*/
 .card {
   width: 100%;
@@ -160,6 +180,11 @@ li {
 .card__icon img {
   width: 30px;
   height: auto;
+}
+
+/*Page Favouri  tes*/
+.mainFavorites {
+  min-height: 800px;
 }
 
 footer {
