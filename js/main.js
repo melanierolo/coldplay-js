@@ -53,6 +53,34 @@ function orderByYear(direction, array) {
   return orderedArrayVideos;
 }
 
+function addFavoriteVideo(video) {
+  console.log("-------------Agregando video ---------------------");
+  const videosStorageJson = localStorage.getItem("favoriteVideos");
+
+  //En el caso que exista elementos en el storage se pasa de 'string' a objeto JavaScript.
+  const videosStorage =
+    typeof videosStorageJson === "string" ? JSON.parse(videosStorageJson) : [];
+  let arrayVideos = [...videosStorage];
+  console.log("array videos:", arrayVideos);
+  console.log("video id:", video.id, video.title);
+
+  //coprobando si el video se repite
+  let isOnTheList = false;
+  arrayVideos.forEach((videoStorage) => {
+    if (videoStorage.id === video.id) {
+      isOnTheList = true;
+    }
+  });
+  if (!isOnTheList || arrayVideos.length === 0) {
+    arrayVideos.push(video);
+  }
+  console.log("el video está en mis favoritos?", isOnTheList);
+
+  //almacenando array de objetos en el storage
+  localStorage.setItem("favoriteVideos", JSON.stringify(arrayVideos));
+  console.log("despues de agregar:", localStorage.getItem("favoriteVideos"));
+}
+
 function renderToHtml(array) {
   //eliminamos el contenido
   showCards.innerHTML = "";
@@ -72,10 +100,7 @@ function renderToHtml(array) {
       const videoColdplay = array.filter(
         (video) => video.id === parseInt(buttonAdd.id)
       );
-      console.log(videoColdplay[0]);
-      //Para almacenar un objeto tiene que ser string -JSON.stringify()
-      const videoColdplayJson = JSON.stringify(videoColdplay[0]);
-      localStorage.setItem(buttonAdd.id, videoColdplayJson);
+      addFavoriteVideo(videoColdplay[0]);
     });
   }
 }
