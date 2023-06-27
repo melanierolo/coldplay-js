@@ -197,3 +197,10 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/*------Page Favorite----------*/
+.mainFavorite__title {
+  font-size: 48px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}

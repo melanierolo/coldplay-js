@@ -71,6 +71,7 @@ function addFavoriteVideo(video) {
       isOnTheList = true;
     }
   });
+
   if (!isOnTheList || arrayVideos.length === 0) {
     arrayVideos.push(video);
   }
