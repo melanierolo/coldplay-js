@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/melanierolo/coldplay-js/issues"
   },
-  "homepage": "https://github.com/melanierolo/coldplay-js#readme"
+  "homepage": "https://github.com/melanierolo/coldplay-js#readme",
+  "dependencies": {
+    "sweetalert2": "^11.7.12"
+  }
 }

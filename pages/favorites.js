@@ -30,13 +30,43 @@ function createFavoriteCard(element) {
   return card;
 }
 
-function renderToHtml(array) {
-  //eliminamos el contenido
-  showFavoriteCards.innerHTML = "";
+function createDeleteButton() {
+  const containerButton = document.getElementById("conteiner-button");
+  containerButton.innerHTML += `<button id="button-delete" class="buttonDelete">Eliminar todos los videos</button>`;
 
-  //pintamos el resultado
-  for (let i = 0; i < array.length; i++) {
-    showFavoriteCards.innerHTML += createFavoriteCard(array[i]);
+  const deleteButton = document.getElementById("button-delete");
+  deleteButton.addEventListener("click", () => {
+    Swal.fire({
+      title: "¿Estás seguro de elimnar todos los videos?",
+      icon: "warning",
+      confirmButtonText: "Aceptar",
+      showCancelButton: true,
+      showCancelButtonText: "Cancelar",
+    }).then((result) => {
+      console.log(result);
+      if (result.isConfirmed) {
+        localStorage.removeItem("favoriteVideos");
+        showFavoriteCards.innerHTML = `<p>No existen videos en tu lista.<p>`;
+        containerButton.innerHTML = "";
+      }
+    });
+  });
+}
+
+function renderToHtml(array) {
+  console.log("page-favorites", array);
+
+  if (array && array.length !== 0) {
+    //eliminamos el contenido
+    showFavoriteCards.innerHTML = "";
+
+    //pintamos el resultado
+    for (let i = 0; i < array.length; i++) {
+      showFavoriteCards.innerHTML += createFavoriteCard(array[i]);
+    }
+    createDeleteButton();
+  } else {
+    showFavoriteCards.innerHTML = `<p>No existen videos en tu lista.<p>`;
   }
 }
 
@@ -46,5 +76,4 @@ const mainFavorites = document.getElementById("mainFavorites");
 const favoriteVideosJson = localStorage.getItem("favoriteVideos");
 const favoriteVideosObject = JSON.parse(favoriteVideosJson);
 
-console.log("page-favorites", favoriteVideosObject);
 renderToHtml(favoriteVideosObject);

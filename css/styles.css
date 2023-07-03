@@ -199,8 +199,37 @@ footer {
 }
 
 /*------Page Favorite----------*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
 .mainFavorite__title {
   font-size: 48px;
   margin: 0 0 20px 0;
   text-align: center;
+}
+/*BUTTON DELETE*/
+.conteinerButton {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonDelete {
+  border: none;
+  padding: 0 10px;
+  border-radius: 15px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: whitesmoke;
+  background-color: #d61f26;
+  cursor: pointer;
+}
+
+.buttonDelete:hover {
+  background-color: #b41c21;
 }
